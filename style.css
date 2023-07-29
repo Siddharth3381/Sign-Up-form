@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins:wght@500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  background-color: var(--red);
+  background-image: url(images/bg-intro-desktop.png);
+}
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: left;
+  width: 50%;
+  margin: auto;
+}
+.leftContainerTextContainer {
+  width: 75%;
+  margin: 1rem;
+}
+.leftContainerHeading {
+  font-size: 4rem;
+  line-height: 4.5rem;
+  margin-bottom: 2rem;
+}
+.leftContainerText {
+}
+.rightContainerWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+}
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  width: 70%;
+}
+.tryItForFreeButton {
+  text-align: center;
+  background-color: var(--blue);
+  color: white;
+  padding: 1rem;
+  border-radius: 0.4em;
+  margin-bottom: 1.6rem;
+  box-shadow: 0.04rem 0.04rem 0.08rem black;
+  width: 100%;
+}
+.priceInfo {
+  font-weight: 400;
+}
+.form {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.2rem;
+  border-radius: 1.2em;
+  box-shadow: 0.4rem 0.4rem 0.8rem black;
+  width: 100%;
+}
+.formField {
+  margin: 0.4rem;
+  width: 90%;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  border-color: lightgray;
+  color: var(--red);
+}
+.submitButton {
+  background-color: var(--green);
+  color: white;
+  width: 90%;
+  margin-bottom: 0rem;
+}
+.temrsText {
+  text-align: center;
+  width: 100%;
+}
+.temrsAndServicePreText {
+  font-size: 0.8rem;
+  color: lightgray;
+}
+.temrsAndService {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: red;
+}
+input:invalid {
+  border: 2px solid var(--red);
+}
+
+.error {
+  padding: 0;
+  font-size: 0.8rem;
+  color: var(--red);
+}
+.error.active {
+  text-align: end;
+  width: 90%;
+  padding: 0.1em;
+}
+
+@media (max-width: 800px) {
+  .leftContainer {
+    width: 80%;
+  }
+  .rightContainerWrapper {
+    width: 80%;
+  }
+  .leftContainerHeading {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  .leftContainerTextContainer {
+    text-align: center;
+    font-size: 0.6rem;
+    line-height: 1.6rem;
+    width: 100%;
+  }
+}
